@@ -21,16 +21,17 @@ class CSound(QMainWindow):  # работа с формой очистки вид
         if ffile == 'mp4' or ffile == 'avi':  # проверка типа файла
             self.label.setText('Файл добавлен')
             self.pushButton_2.clicked.connect(self.clear_sound)
+            self.label_3.setText('Ожидайте')
         else:
             self.label.setText('Неверный формат файла')
 
     def clear_sound(self):  # удаление звука с видеофрагмента
-        self.label.setText('')
         pname = self.lineEdit.text()
-        if pname == '':
-            self.label.setText('Введите имя файла')
-        else:
+        self.label.setText('')
+        if pname != '':
             video = VideoFileClip(self.doc)
             new_video = video.without_audio()
             new_video.write_videofile(f'{pname}.mp4')
             self.label.setText('Операция выполнена')
+        else:
+            self.label.setText('Введите имя файла')

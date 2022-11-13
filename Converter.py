@@ -79,9 +79,9 @@ class QMainWindow(QMainWindow):  # создание основного окна,
                 type = self.comboBox_2.currentText()
                 if not (self.t == type):
                     os.rename(self.doc, f'{self.name}{type}')
+                    self.label_4.setText('Операция выполнена')
                 else:
                     self.label_3.setText('Файл уже в таком формате')
-                    self.label_4.setText('Операция выполнена')
             else:
                 self.label_3.setText('Невозможно конвертировать')
         elif self.radioButton_6.isChecked():
@@ -94,7 +94,6 @@ class QMainWindow(QMainWindow):  # создание основного окна,
                     self.label_3.setText('Файл уже в таком формате')
             else:
                 self.label_3.setText('Невозможно конвертировать')
-            # self.label_2.setText(type)
 
     def vir_zvuk(self):  # обработка нажатия на кнопку: Удаление звука из видео
         global without_zvuk
