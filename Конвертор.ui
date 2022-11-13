@@ -51,7 +51,7 @@
      </font>
     </property>
     <property name="text">
-     <string>Выберите файл</string>
+     <string>Выберите файл 📁</string>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_2">
@@ -59,7 +59,7 @@
      <rect>
       <x>690</x>
       <y>90</y>
-      <width>141</width>
+      <width>161</width>
       <height>81</height>
      </rect>
     </property>
@@ -69,7 +69,7 @@
      </font>
     </property>
     <property name="text">
-     <string>Конвертировать</string>
+     <string>Конвертировать ✉️</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_2">

@@ -32,7 +32,7 @@
                     <string/>
                 </property>
             </widget>
-            <widget class="QWidget" name="">
+            <widget class="QWidget" name="layoutWidget">
                 <property name="geometry">
                     <rect>
                         <x>40</x>
@@ -50,7 +50,7 @@
                                 </font>
                             </property>
                             <property name="text">
-                                <string>Выбрать файл</string>
+                                <string>Выбрать файл 📁</string>
                             </property>
                         </widget>
                     </item>
@@ -62,7 +62,7 @@
                                 </font>
                             </property>
                             <property name="text">
-                                <string>Сохранить файл</string>
+                                <string>Сохранить файл 📩</string>
                             </property>
                         </widget>
                     </item>

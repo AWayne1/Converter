@@ -19,7 +19,7 @@
                     <rect>
                         <x>10</x>
                         <y>10</y>
-                        <width>121</width>
+                        <width>151</width>
                         <height>51</height>
                     </rect>
                 </property>
@@ -29,15 +29,15 @@
                     </font>
                 </property>
                 <property name="text">
-                    <string>Выбрать файл</string>
+                    <string>Выбрать файл 📁</string>
                 </property>
             </widget>
             <widget class="QPushButton" name="pushButton_2">
                 <property name="geometry">
                     <rect>
-                        <x>160</x>
+                        <x>170</x>
                         <y>10</y>
-                        <width>131</width>
+                        <width>151</width>
                         <height>51</height>
                     </rect>
                 </property>
@@ -47,7 +47,7 @@
                     </font>
                 </property>
                 <property name="text">
-                    <string>Сохранить файл</string>
+                    <string>Сохранить файл 📩</string>
                 </property>
             </widget>
             <widget class="QLabel" name="label">
