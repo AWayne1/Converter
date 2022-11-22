@@ -2,6 +2,9 @@
 <ui version="4.0">
  <class>MainWindow</class>
  <widget class="QMainWindow" name="MainWindow">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -9,6 +12,24 @@
     <width>864</width>
     <height>381</height>
    </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>864</width>
+    <height>381</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>864</width>
+    <height>381</height>
+   </size>
   </property>
   <property name="windowTitle">
    <string>Converter</string>
@@ -38,7 +59,7 @@
     <property name="geometry">
      <rect>
       <x>30</x>
-      <y>210</y>
+      <y>230</y>
       <width>161</width>
       <height>51</height>
      </rect>
@@ -101,7 +122,7 @@
       <x>20</x>
       <y>40</y>
       <width>171</width>
-      <height>161</height>
+      <height>181</height>
      </rect>
     </property>
     <layout class="QVBoxLayout" name="verticalLayout">
@@ -141,6 +162,18 @@
        </property>
       </widget>
      </item>
+     <item>
+      <widget class="QRadioButton" name="radioButton_7">
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Архив</string>
+       </property>
+      </widget>
+     </item>
     </layout>
    </widget>
    <widget class="QWidget" name="layoutWidget">
@@ -148,8 +181,8 @@
      <rect>
       <x>259</x>
       <y>42</y>
-      <width>391</width>
-      <height>181</height>
+      <width>411</width>
+      <height>211</height>
      </rect>
     </property>
     <layout class="QVBoxLayout" name="verticalLayout_4">
@@ -252,6 +285,37 @@
          <item>
           <property name="text">
            <string>.mid</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item>
+        <widget class="QRadioButton" name="radioButton_8">
+         <property name="font">
+          <font>
+           <pointsize>10</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>Архив</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QComboBox" name="comboBox_4">
+         <item>
+          <property name="text">
+           <string>.rar</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>.zip</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>.arj</string>
           </property>
          </item>
         </widget>

@@ -58,6 +58,10 @@ class QMainWindow(QMainWindow):  # создание основного окна,
 
         elif self.radioButton.isChecked() and (rfile == 'wav' or rfile == 'mp3' or rfile == 'kar' or rfile == 'ogg'):
             self.label_4.setText('Файл добавлен')
+
+        elif self.radioButton_7.isChecked() and (rfile == 'rar' or rfile == 'zip' or rfile == 'arj'):
+            self.label_4.setText('Файл добавлен')
+
         else:
             self.label_3.setText('Неверный формат файла!')
 
@@ -87,6 +91,16 @@ class QMainWindow(QMainWindow):  # создание основного окна,
         elif self.radioButton_6.isChecked():
             if self.radioButton.isChecked():
                 type = self.comboBox_3.currentText()
+                if not (self.t == type):
+                    os.rename(self.doc, f'{self.name}{type}')
+                    self.label_4.setText('Операция выполнена')
+                else:
+                    self.label_3.setText('Файл уже в таком формате')
+            else:
+                self.label_3.setText('Невозможно конвертировать')
+        elif self.radioButton_8.isChecked():
+            if self.radioButton_7.isChecked():
+                type = self.comboBox_4.currentText()
                 if not (self.t == type):
                     os.rename(self.doc, f'{self.name}{type}')
                     self.label_4.setText('Операция выполнена')
