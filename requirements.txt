@@ -1,5 +1,3 @@
-PyQt5;
-sys;
-os;
-moviepy;
-time;
+PyQt5==5.15.10
+moviepy==1.0.3
+Pillow==10.1.0

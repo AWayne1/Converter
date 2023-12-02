@@ -34,6 +34,13 @@
   <property name="windowTitle">
    <string>Converter</string>
   </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>logo.png</normaloff>logo.png</iconset>
+  </property>
+  <property name="locale">
+   <locale language="Russian" country="Russia"/>
+  </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QLabel" name="label">
     <property name="geometry">
@@ -379,7 +386,7 @@
    </widget>
    <widget class="QMenu" name="menu_2">
     <property name="title">
-     <string>Действия</string>
+     <string>Доп.Действия</string>
     </property>
     <addaction name="vzvuk"/>
     <addaction name="izvuk"/>
