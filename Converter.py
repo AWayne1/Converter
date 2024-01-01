@@ -1,12 +1,10 @@
 import sys
-from PyQt5.QtWidgets import QApplication, QMainWindow, QFileDialog, QLabel, QAction, QVBoxLayout, QWidget, QRadioButton
-from PyQt5 import uic, QtGui
-from PyQt5 import QtWidgets
+from PyQt5.QtWidgets import QApplication, QMainWindow, QFileDialog
+from PyQt5 import uic
 from clear_sound import CSound  # импорт формы: удаление звука из видеозаписи
 from cut_sound import CTSound  # импорт формы: вырез звука из видео
 from About_Program import About_Program  # импорт формы: о программе
 import os
-import moviepy
 import shutil
 import logging
 from PIL import Image
