@@ -114,7 +114,8 @@ class QMainWindow(QMainWindow):  # создание основного окна,
                 type_1 = self.comboBox_3.currentText()
                 if not (self.t == type):
                     new_audio = f'{self.name}{type_1}'
-                    os.rename(self.doc, f'{self.name}{type}')
+                    shutil.copy(self.doc, new_audio)
+                    # os.rename(self.doc, f'{self.name}{type}')
                     self.label_4.setText('Подождите некоторое время')
                     while True:
                         if os.path.exists(new_audio):
