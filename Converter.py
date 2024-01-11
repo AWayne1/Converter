@@ -130,8 +130,14 @@ class QMainWindow(QMainWindow):  # создание основного окна,
             if self.radioButton_7.isChecked():  # архив
                 type = self.comboBox_4.currentText()
                 if not (self.t == type):
-                    os.rename(self.doc, f'{self.name}{type}')
-                    self.label_4.setText('Операция выполнена')
+                    new_arh = f'{self.name}{type}'
+                    shutil.copy(self.doc, new_arh)
+                    self.label_4.setText('Подождите некоторое время')
+                    while True:
+                        if os.path.exists(new_arh):
+                            self.logger.info('Процесс обработки архива завершен')
+                            self.label_4.setText('Операция выполнена')
+                            break
                 else:
                     self.label_3.setText('Файл уже в таком формате')
             else:
